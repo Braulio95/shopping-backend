@@ -5,3 +5,5 @@ export interface Product {
     purchaseDate: string;
     shoppingListId: number;
 }
+
+export interface PostProduct extends Omit<Product, 'id'> { }

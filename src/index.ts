@@ -1,5 +1,5 @@
 import express from 'express'
-import shoppingRouter from './routes/shopping'
+import productRouter from './routes/product'
 
 const app = express()
 app.use(express.json())
@@ -10,7 +10,7 @@ app.get('/ping', (_req, res) => {
     res.send('hola mundo')
 })
 
-app.use('/api/shopping', shoppingRouter)
+app.use('/api/products', productRouter)
 
 app.listen(PORT, () => {
     console.log(`Listening in port ${PORT}`)
