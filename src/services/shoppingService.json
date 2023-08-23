@@ -1,0 +1,72 @@
+[
+  {
+    "id": 1,
+    "product": "Rice",
+    "quantity": 2,
+    "purchaseDate": "2023-08-22",
+    "shoppingListId": 1
+  },
+  {
+    "id": 2,
+    "product": "Milk",
+    "quantity": 1,
+    "purchaseDate": "2023-08-22",
+    "shoppingListId": 1
+  },
+  {
+    "id": 3,
+    "product": "Chicken",
+    "quantity": 3,
+    "purchaseDate": "2023-08-21",
+    "shoppingListId": 2
+  },
+  {
+    "id": 4,
+    "product": "Bananas",
+    "quantity": 6,
+    "purchaseDate": "2023-08-21",
+    "shoppingListId": 2
+  },
+  {
+    "id": 5,
+    "product": "Tomatoes",
+    "quantity": 4,
+    "purchaseDate": "2023-08-23",
+    "shoppingListId": 3
+  },
+  {
+    "id": 6,
+    "product": "Bread",
+    "quantity": 2,
+    "purchaseDate": "2023-08-23",
+    "shoppingListId": 3
+  },
+  {
+    "id": 7,
+    "product": "Apples",
+    "quantity": 5,
+    "purchaseDate": "2023-08-24",
+    "shoppingListId": 4
+  },
+  {
+    "id": 8,
+    "product": "Eggs",
+    "quantity": 12,
+    "purchaseDate": "2023-08-24",
+    "shoppingListId": 4
+  },
+  {
+    "id": 9,
+    "product": "Onions",
+    "quantity": 3,
+    "purchaseDate": "2023-08-25",
+    "shoppingListId": 5
+  },
+  {
+    "id": 10,
+    "product": "Cheese",
+    "quantity": 1,
+    "purchaseDate": "2023-08-25",
+    "shoppingListId": 5
+  }
+]
