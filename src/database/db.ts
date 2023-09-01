@@ -1,8 +1,11 @@
 import { Sequelize } from "sequelize";
+import { setUpProduct } from "../models/product";
 
-
-
-export const startDB = async (url: string): Promise<Sequelize> => {
-    let sequelize:Sequelize = new Sequelize(url);
-    return sequelize
-}
+let sequelize: Sequelize;
+export const startDB = (url: string): Sequelize => {
+  sequelize = new Sequelize(url);
+  setUpProduct(sequelize);
+  sequelize.authenticate();
+  sequelize.sync();
+  return sequelize;
+};
