@@ -1,17 +1,19 @@
-import express from 'express'
-import productRouter from './routes/product'
+import app from "./app";
+import dotenv from "dotenv";
+import { startDB } from "./database/db";
+dotenv.config();
 
-const app = express()
-app.use(express.json())
-const PORT = 3000
+const PORT = process.env.PORT;
+const URI_CONN = process.env.URI_CONN;
 
-app.get('/ping', (_req, res) => {
-    console.log('hola')
-    res.send('hola mundo')
-})
-
-app.use('/api/products', productRouter)
-
-app.listen(PORT, () => {
-    console.log(`Listening in port ${PORT}`)
-})
+app.listen(PORT, async () => {
+  try {
+    if (URI_CONN) {
+      startDB(URI_CONN);
+      console.log(`App is up and running at port:${PORT}`);
+    }
+  } catch (error) {
+    console.log(error);
+    process.abort();
+  }
+});
